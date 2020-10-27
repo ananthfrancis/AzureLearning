@@ -3,4 +3,34 @@ Example: Restrict the VM instance creation with limited resource size.
 
 Difference between Policy and RBAC:
 RBAC allows you to control user actions like what kind of activity the user can perform. 
-But, Policy allows you to control the resoure types
+Azure Policy focuses on resource properties during deployment and for already-existing resources. 
+Azure Policy controls properties such as the types or locations of resources. Unlike RBAC, Azure Policy is a default-allow-and-explicit-deny system.
+
+Create a policy:
+To create a policy, we have to create a policy definition.
+A policy definition expresses what to evaluate and what action to take. 
+For example, you could ensure all public websites are secured with HTTPS, prevent a particular storage type from being created, 
+or force a specific version of SQL Server to be used.
+
+Policy definition	Description:
+Allowed Storage Account SKUs	
+Allowed Resource Type	
+Allowed Locations	
+Allowed Virtual Machine SKUs	
+Not allowed resource types
+
+Its a json object.
+
+To apply an azure policy, you can use Powershell, AZure CLI or portal.
+
+Policy Assignment:
+We can assign the policy from Full Subscription to resource group level.
+And, Assigned policy will be applied to their child resource groups. We can exclude couple of resources or groups from the policy assignment.
+
+Policy Effects:
+Policy Effect	            What happens?
+Deny	                    The resource creation/update fails due to policy.
+Disabled	                The policy rule is ignored (disabled). Often used for testing.
+Append	                  Adds additional parameters/fields to the requested resource during creation or update. A common example is adding tags on resources such as Cost Center or specifying allowed IPs for a storage resource.
+Audit, AuditIfNotExists	  Creates a warning event in the activity log when evaluating a non-compliant resource, but it doesn't stop the request.
+DeployIfNotExists	        Executes a template deployment when a specific condition is met. For example, if SQL encryption is enabled on a database, then it can run a template after the DB is created to set it up a specific way.
