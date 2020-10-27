@@ -1,0 +1,6 @@
+Azure Policy is an service which will be helpful to create and manage the policies.
+Example: Restrict the VM instance creation with limited resource size.
+
+Difference between Policy and RBAC:
+RBAC allows you to control user actions like what kind of activity the user can perform. 
+But, Policy allows you to control the resoure types
