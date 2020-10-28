@@ -37,3 +37,15 @@ DeployIfNotExists	        Executes a template deployment when a specific conditi
 
 Policy Initiatives:
 It will help to organise the policy definitions. You can group multiple policy definitions as a single initiatives and assign it resource groups.
+
+Manage access, policies, and compliance across multiple Azure subscriptions:
+We can create management group which may contains hierarchy of whole organisations subscriptions.
+What ever policy assigned on management group will be applied to all the subscriptions within that management group.
+By default, the root management group's display name is Tenant root group.
+
+Important facts about management groups
+Any Azure AD user in the organization can create a management group. The creator is given an Owner role assignment.
+A single Azure AD organization can support 10,000 management groups.
+A management group tree can support up to six levels of depth not including the Root level or subscription level.
+Each management group can have many children.
+When your organization creates subscriptions, they are automatically added to the root management group.
