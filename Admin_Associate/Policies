@@ -34,3 +34,6 @@ Disabled	                The policy rule is ignored (disabled). Often used for t
 Append	                  Adds additional parameters/fields to the requested resource during creation or update. A common example is adding tags on resources such as Cost Center or specifying allowed IPs for a storage resource.
 Audit, AuditIfNotExists	  Creates a warning event in the activity log when evaluating a non-compliant resource, but it doesn't stop the request.
 DeployIfNotExists	        Executes a template deployment when a specific condition is met. For example, if SQL encryption is enabled on a database, then it can run a template after the DB is created to set it up a specific way.
+
+Policy Initiatives:
+It will help to organise the policy definitions. You can group multiple policy definitions as a single initiatives and assign it resource groups.
