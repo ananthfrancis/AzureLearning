@@ -63,3 +63,23 @@ With Resource Manager template, the template gets used for deployments of one or
 Compliance Manager:
 Compliance manager is a dashboard which will help you to track, assign and manage the organisations compliance activity.
 It will provide recommendations which can be evaluated by organisation before applying it. There is no guarantee that these recommendations fix your compliances.
+
+Monitor Health of your appliations and Services.
+Azure Monitor
+Azure Service Health
+
+Azure Monitor:
+Monitor your applications performance and availability.
+1) Azure Insights
+2) Azure Monitor for Containers
+3) Azure Monitor for VMs
+
+Alerts: If any issue, Azure Monitor will proactively report the issue to required teams.
+AutoScale: Azure Monitor uses autoscale to automaticall scale up/down the resources based on the metrics it received from the applications.
+
+Azure Service Health: 
+Azure Service Health is a suite of experiences that provide personalized guidance and support when issues with Azure services affect you
+
+Azure status: You can check every service's status through this service.
+Service Health: Service Health provides you with a customizable dashboard that tracks the state of your Azure services in the regions where you use them.
+Resource Health: helps you diagnose and obtain support when an Azure service issue affects your resources
