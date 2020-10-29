@@ -59,3 +59,7 @@ Resource Manager template need be managed in local machine or SCM Systems like G
 With Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved. 
 This connection supports improved tracking and auditing of deployments.
 With Resource Manager template, the template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
+
+Compliance Manager:
+Compliance manager is a dashboard which will help you to track, assign and manage the organisations compliance activity.
+It will provide recommendations which can be evaluated by organisation before applying it. There is no guarantee that these recommendations fix your compliances.
